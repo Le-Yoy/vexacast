@@ -18,12 +18,36 @@
 
 <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H17YZDEMP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-6H17YZDEMP');
-    </script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Enhanced config with all tracking
+    gtag('config', 'G-6H17YZDEMP', {
+        'campaign_source': 'reddit',
+        'campaign_name': 'vexacast_launch',
+        'send_page_view': true
+    });
+    
+    // Track Reddit traffic specifically
+    if(document.referrer.includes('reddit')) {
+        gtag('event', 'reddit_visitor', {
+            'event_category': 'Traffic Source',
+            'event_label': 'Reddit Referral',
+            'value': 1
+        });
+    }
+    
+    // Track direct brand searches
+    if(document.referrer === '' || document.referrer.includes('google')) {
+        gtag('event', 'brand_search', {
+            'event_category': 'Traffic Source',
+            'event_label': 'Direct/Google Search',
+            'value': 1
+        });
+    }
+</script>
     
     <style>
         * {
