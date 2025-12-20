@@ -78,16 +78,76 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+        /* Snowflakes Animation */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+    z-index: 1;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 0.8;
+    }
+    100% {
+        top: 110%;
+        opacity: 0;
+    }
+}
+
+.snowflake:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: 2s; }
+.snowflake:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: 4s; }
+.snowflake:nth-child(4) { left: 40%; animation-duration: 14s; animation-delay: 1s; }
+.snowflake:nth-child(5) { left: 50%; animation-duration: 11s; animation-delay: 3s; }
+.snowflake:nth-child(6) { left: 60%; animation-duration: 9s; animation-delay: 5s; }
+.snowflake:nth-child(7) { left: 70%; animation-duration: 13s; animation-delay: 2s; }
+.snowflake:nth-child(8) { left: 80%; animation-duration: 10s; animation-delay: 4s; }
+.snowflake:nth-child(9) { left: 90%; animation-duration: 12s; animation-delay: 1s; }
+.snowflake:nth-child(10) { left: 15%; animation-duration: 11s; animation-delay: 6s; }
+.snowflake:nth-child(11) { left: 25%; animation-duration: 9s; animation-delay: 3s; }
+.snowflake:nth-child(12) { left: 35%; animation-duration: 13s; animation-delay: 5s; }
+.snowflake:nth-child(13) { left: 45%; animation-duration: 10s; animation-delay: 2s; }
+.snowflake:nth-child(14) { left: 55%; animation-duration: 12s; animation-delay: 4s; }
+.snowflake:nth-child(15) { left: 65%; animation-duration: 8s; animation-delay: 1s; }
+.snowflake:nth-child(16) { left: 75%; animation-duration: 14s; animation-delay: 3s; }
+.snowflake:nth-child(17) { left: 85%; animation-duration: 11s; animation-delay: 6s; }
+.snowflake:nth-child(18) { left: 95%; animation-duration: 9s; animation-delay: 2s; }
+.snowflake:nth-child(19) { left: 5%; animation-duration: 13s; animation-delay: 4s; }
+.snowflake:nth-child(20) { left: 50%; animation-duration: 10s; animation-delay: 5s; }
+
+/* Christmas Tree SVG */
+.christmas-tree {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    animation: treeGlow 2s ease-in-out infinite;
+}
+
+@keyframes treeGlow {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6)); }
+    50% { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 1)); }
+}
         
         /* Hero Section with Split Design */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            background: linear-gradient(170deg, #FFFFFF 0%, #F0FFFE 50%, #E6FFFB 100%);
-            overflow: hidden;
-        }
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(170deg, #E3F2FD 0%, #BBDEFB 30%, #90CAF9 60%, #64B5F6 100%);
+    overflow: hidden;
+}
+
         
         .hero-container {
             width: 100%;
@@ -764,10 +824,52 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero">
+<!-- Hero Section -->
+<section class="hero">
+    <!-- Snowflakes -->
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    
+    <!-- Christmas Tree SVG -->
+    <svg class="christmas-tree" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Tree -->
+        <polygon points="50,10 30,40 70,40" fill="#2E7D32"/>
+        <polygon points="50,30 25,60 75,60" fill="#388E3C"/>
+        <polygon points="50,50 20,80 80,80" fill="#43A047"/>
+        <!-- Trunk -->
+        <rect x="45" y="80" width="10" height="15" fill="#5D4037"/>
+        <!-- Star -->
+        <polygon points="50,0 52,8 60,8 54,13 56,21 50,16 44,21 46,13 40,8 48,8" fill="#FFD700"/>
+        <!-- Ornaments -->
+        <circle cx="40" cy="45" r="3" fill="#FF5252"/>
+        <circle cx="60" cy="45" r="3" fill="#FFD700"/>
+        <circle cx="35" cy="65" r="3" fill="#2196F3"/>
+        <circle cx="50" cy="70" r="3" fill="#FF5252"/>
+        <circle cx="65" cy="65" r="3" fill="#FFD700"/>
+    </svg>
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-badge">🎄 CHRISTMAS SPECIAL - 70% OFF</div>
+                <div class="hero-badge" style="background: linear-gradient(135deg, #C62828, #D32F2F, #E53935); font-size: 15px; padding: 12px 30px; box-shadow: 0 0 30px rgba(198, 40, 40, 0.6);">
+    🎄 CHRISTMAS SPECIAL 2024 - 70% OFF 🎁
+</div>
 
 <div style="background: linear-gradient(135deg, #FF6B35, #FF4757); color: white; padding: 16px 24px; border-radius: 12px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);">
     <strong>📱 Important Notice for Existing Customers:</strong><br>
@@ -813,9 +915,23 @@
                 </div>
             </div>
             
-            <div class="hero-image">
-                <img src="assets/channels-preview.webp" alt="Vexacast Premium" loading="eager">
-            </div>
+            <div class="hero-image" style="position: relative;">
+    <!-- Gift Box SVG -->
+    <svg style="position: absolute; top: 20px; left: 20px; width: 60px; height: 60px; z-index: 100; animation: bounce 2s infinite;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Box -->
+        <rect x="20" y="40" width="60" height="50" fill="#E53935" stroke="#C62828" stroke-width="2"/>
+        <!-- Ribbon Vertical -->
+        <rect x="47" y="40" width="6" height="50" fill="#FFD700"/>
+        <!-- Ribbon Horizontal -->
+        <rect x="20" y="47" width="60" height="6" fill="#FFD700"/>
+        <!-- Bow -->
+        <ellipse cx="35" cy="35" rx="12" ry="8" fill="#FFD700"/>
+        <ellipse cx="65" cy="35" rx="12" ry="8" fill="#FFD700"/>
+        <circle cx="50" cy="35" r="8" fill="#FFA000"/>
+    </svg>
+    
+    <img src="assets/channels-preview.webp" alt="Vexacast Premium" loading="eager">
+</div>
         </div>
     </section>
     
@@ -873,7 +989,7 @@
     <!-- Pricing -->
     <section class="pricing">
         <div class="section-header">
-            <h2 class="section-title">Choose Your Perfect Plan</h2>
+            <h2 class="section-title">🎅 Choose Your Christmas Gift Plan 🎁</h2>
             <p class="section-subtitle">All plans include full access to all channels and features</p>
         </div>
         
