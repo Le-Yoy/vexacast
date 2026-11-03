@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Vexacast Pricing — Plans from $19/mo | 4K IPTV</title>
+    <link rel="canonical" href="https://vexacast.com/pricing-plans/">
+    <meta name="description" content="Vexacast pricing plans: Monthly $19, 3-Month $39, Annual $79. 49,000+ channels in 4K, 80,000+ movies. All plans include full access. 30-day money-back guarantee.">
+    <meta property="og:title" content="Vexacast Pricing — Plans from $19/mo">
+    <meta property="og:description" content="Simple, transparent pricing. Monthly $19, 3-Month $39, Annual $79. Full 4K access. 30-day money-back guarantee.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H17YZDEMP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6H17YZDEMP', { 'send_page_view': true });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --primary:#6366F1;--primary-light:#A5B4FC;--accent:#EC4899;--accent-light:#F472B6;
+            --cta-accent:#FF6B35;--bg-dark:#09090B;--bg-card:#18181B;--bg-elevated:#27272A;
+            --white:#FFFFFF;--gray-100:#F4F4F5;--gray-300:#D4D4D8;--gray-400:#A1A1AA;--gray-500:#71717A;
+            --success:#10B981;--warning:#F59E0B;
+        }
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-dark);color:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+        /* Nav */
+        .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto}
+        .nav-brand{font-size:1.3rem;font-weight:800;text-decoration:none;background:linear-gradient(135deg,var(--primary-light),var(--accent-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .nav-links{display:flex;gap:24px;align-items:center}
+        .nav-links a{color:var(--gray-400);text-decoration:none;font-size:.85rem;font-weight:500;transition:color .2s}
+        .nav-links a:hover,.nav-links a.active{color:var(--white)}
+        @media(max-width:600px){.nav-links{gap:12px}.nav-links a{font-size:.75rem}}
+
+        /* Page Header */
+        .page-header{text-align:center;padding:80px 20px 40px;background:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(99,102,241,.2),transparent),var(--bg-dark)}
+        .page-header h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
+        .page-header h1 span{background:linear-gradient(135deg,var(--primary-light),var(--accent-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .page-header p{color:var(--gray-400);font-size:1rem;max-width:560px;margin:0 auto}
+
+        /* Pricing Section */
+        .pricing{padding:40px 20px 80px;max-width:1100px;margin:0 auto}
+        .pricing-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:60px}
+        .price-card{background:var(--bg-card);border:1px solid var(--bg-elevated);border-radius:20px;padding:28px 24px;position:relative;transition:all .3s ease}
+        .price-card:hover{transform:translateY(-4px);border-color:rgba(99,102,241,.3);box-shadow:0 20px 40px rgba(0,0,0,.3)}
+        .price-card.featured{background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(236,72,153,.05));border:2px solid var(--primary)}
+        .popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--primary),var(--accent));color:var(--white);padding:5px 16px;border-radius:20px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+        .price-header{margin-bottom:20px}
+        .price-name{font-size:1.1rem;font-weight:700;margin-bottom:4px}
+        .price-desc{font-size:.8rem;color:var(--gray-500)}
+        .price-main{margin-bottom:16px}
+        .price-amount{display:flex;align-items:baseline;gap:4px}
+        .price-currency{font-size:1.5rem;font-weight:700;color:var(--gray-400)}
+        .price-value{font-size:3.5rem;font-weight:800;line-height:1;background:linear-gradient(135deg,var(--white),var(--gray-300));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .price-period{font-size:.9rem;color:var(--gray-500);margin-left:4px}
+        .price-convert{display:flex;gap:12px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--bg-elevated)}
+        .convert-item{font-size:.8rem;color:var(--gray-400)}
+        .convert-item strong{color:var(--gray-300)}
+        .price-features{list-style:none;margin-bottom:24px}
+        .price-features li{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--gray-300);padding:8px 0}
+        .price-features li::before{content:'';width:18px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2310B981' stroke-width='2.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'/%3E%3C/svg%3E") center/contain no-repeat;flex-shrink:0}
+        .price-cta{display:block;width:100%;background:linear-gradient(135deg,#25D366,#128C7E);color:var(--white);padding:14px;border-radius:12px;font-size:.95rem;font-weight:700;text-decoration:none;text-align:center;transition:all .3s ease}
+        .price-cta:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(37,211,102,.35)}
+        .price-note{text-align:center;font-size:.7rem;color:var(--gray-500);margin-top:12px}
+
+        /* Comparison */
+        .comparison{padding:0 20px 80px;max-width:800px;margin:0 auto}
+        .comparison h2{text-align:center;font-size:clamp(1.3rem,4vw,1.8rem);font-weight:800;margin-bottom:8px}
+        .comparison .sub{text-align:center;color:var(--gray-500);font-size:.9rem;margin-bottom:32px}
+        .compare-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:16px;border:1px solid var(--bg-elevated)}
+        .compare-table th,.compare-table td{padding:14px 18px;text-align:left;font-size:.85rem;border-bottom:1px solid var(--bg-elevated)}
+        .compare-table th{background:var(--bg-card);color:var(--gray-400);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:1px}
+        .compare-table td{background:var(--bg-dark)}
+        .compare-table td:first-child{color:var(--gray-300);font-weight:500}
+        .compare-table tr:last-child td{border-bottom:none}
+        .check{color:var(--success);font-weight:700}
+        .cross{color:#EF4444;font-weight:700}
+        .highlight-col{background:rgba(99,102,241,.05)!important;color:var(--white);font-weight:600}
+
+        /* FAQ */
+        .faq{padding:0 20px 80px;max-width:700px;margin:0 auto}
+        .faq h2{text-align:center;font-size:clamp(1.3rem,4vw,1.8rem);font-weight:800;margin-bottom:32px}
+        .faq-item{border:1px solid var(--bg-elevated);border-radius:12px;margin-bottom:12px;overflow:hidden}
+        .faq-q{padding:16px 20px;font-size:.9rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--bg-card);transition:background .2s}
+        .faq-q:hover{background:var(--bg-elevated)}
+        .faq-q::after{content:'+';font-size:1.2rem;color:var(--gray-500);transition:transform .2s}
+        .faq-item.open .faq-q::after{content:'-'}
+        .faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:all .3s ease;font-size:.85rem;color:var(--gray-400);line-height:1.7}
+        .faq-item.open .faq-a{padding:16px 20px;max-height:300px}
+
+        /* Final CTA */
+        .final-cta{padding:80px 20px;text-align:center;background:linear-gradient(180deg,var(--bg-dark),#0F0F12)}
+        .final-cta h2{font-size:clamp(1.3rem,4vw,1.8rem);font-weight:800;margin-bottom:12px}
+        .final-cta p{color:var(--gray-400);margin-bottom:24px;font-size:.9rem}
+        .cta-main{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#25D366,#128C7E);color:var(--white);padding:16px 32px;border-radius:14px;font-size:1rem;font-weight:700;text-decoration:none;transition:all .3s ease;box-shadow:0 4px 20px rgba(37,211,102,.3)}
+        .cta-main:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,.4)}
+
+        /* Footer */
+        footer{padding:40px 20px;background:#0A0A0C;text-align:center;border-top:1px solid var(--bg-elevated)}
+        .footer-brand{font-size:1.3rem;font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,var(--primary-light),var(--accent-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:12px;flex-wrap:wrap}
+        .footer-links a{color:var(--gray-500);text-decoration:none;font-size:.8rem;transition:color .2s}
+        .footer-links a:hover{color:var(--white)}
+        .footer-text{font-size:.75rem;color:var(--gray-500)}
+
+        /* WhatsApp Float */
+        .wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:linear-gradient(135deg,#25D366,#128C7E);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 30px rgba(37,211,102,.4);z-index:999;text-decoration:none;transition:all .3s ease}
+        .wa-float:hover{transform:scale(1.1);box-shadow:0 8px 40px rgba(37,211,102,.5)}
+        .wa-float svg{width:28px;height:28px;fill:white}
+        .wa-float::after{content:'';position:absolute;inset:-4px;border:2px solid rgba(37,211,102,.3);border-radius:50%;animation:ring 2s ease-out infinite}
+        @keyframes ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.4);opacity:0}}
+
+        @media(min-width:768px){
+            .pricing-grid{grid-template-columns:repeat(3,1fr);gap:24px}
+            .price-card.featured{transform:scale(1.05)}
+            .price-card.featured:hover{transform:scale(1.05) translateY(-4px)}
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="/welcome/" class="nav-brand">Vexacast</a>
+        <div class="nav-links">
+            <a href="/welcome/">Home</a>
+            <a href="/pricing-plans/" class="active">Pricing</a>
+            <a href="/welcome/">Channels</a>
+            <a href="/welcome/">Reviews</a>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Simple, <span>Transparent Pricing</span></h1>
+        <p>All plans include full access to 49,000+ channels and 80,000+ movies in 4K. No hidden fees, no contracts. Cancel anytime.</p>
+    </div>
+
+    <section class="pricing">
+        <div class="pricing-grid">
+            <div class="price-card">
+                <div class="price-header">
+                    <div class="price-name">Monthly</div>
+                    <div class="price-desc">Flexible, no commitment</div>
+                </div>
+                <div class="price-main">
+                    <div class="price-amount">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">19</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                </div>
+                <div class="price-convert">
+                    <span class="convert-item">or <strong>&pound;17</strong> GBP</span>
+                    <span class="convert-item"><strong>&euro;19</strong> EUR</span>
+                </div>
+                <ul class="price-features">
+                    <li>49,000+ Live Channels</li>
+                    <li>HD & 4K Quality</li>
+                    <li>1 Device Connection</li>
+                    <li>7-Day Replay</li>
+                    <li>Premium EPG Guide</li>
+                    <li>24/7 WhatsApp Support</li>
+                </ul>
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%20Monthly%20Plan" class="price-cta" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'Monthly'});">Get Monthly</a>
+                <p class="price-note">7-day money-back guarantee</p>
+            </div>
+
+            <div class="price-card featured">
+                <span class="popular-badge">Most Popular</span>
+                <div class="price-header">
+                    <div class="price-name">3 Months</div>
+                    <div class="price-desc">Best value for regular viewers</div>
+                </div>
+                <div class="price-main">
+                    <div class="price-amount">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">39</span>
+                        <span class="price-period">/quarter</span>
+                    </div>
+                </div>
+                <div class="price-convert">
+                    <span class="convert-item">or <strong>&pound;33</strong> GBP</span>
+                    <span class="convert-item"><strong>&euro;36</strong> EUR</span>
+                </div>
+                <ul class="price-features">
+                    <li>49,000+ Live Channels</li>
+                    <li>Full 4K Ultra HD Quality</li>
+                    <li>1 Device Connection</li>
+                    <li>14-Day Replay</li>
+                    <li>Anti-Freeze Technology</li>
+                    <li>Priority Support</li>
+                    <li>80,000+ Movies & Shows</li>
+                </ul>
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%203-Month%20Plan" class="price-cta" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'3-Month'});">Get 3 Months</a>
+                <p class="price-note">14-day money-back guarantee</p>
+            </div>
+
+            <div class="price-card">
+                <div class="price-header">
+                    <div class="price-name">Annual</div>
+                    <div class="price-desc">Maximum savings for enthusiasts</div>
+                </div>
+                <div class="price-main">
+                    <div class="price-amount">
+                        <span class="price-currency">$</span>
+                        <span class="price-value">79</span>
+                        <span class="price-period">/year</span>
+                    </div>
+                </div>
+                <div class="price-convert">
+                    <span class="convert-item">or <strong>&pound;62</strong> GBP</span>
+                    <span class="convert-item"><strong>&euro;73</strong> EUR</span>
+                </div>
+                <ul class="price-features">
+                    <li>49,000+ Live Channels</li>
+                    <li>80,000+ Movies & Shows</li>
+                    <li>Full 4K Ultra HD Quality</li>
+                    <li>1 Device Connection</li>
+                    <li>30-Day Replay</li>
+                    <li>Anti-Freeze Technology</li>
+                    <li>VIP Support</li>
+                </ul>
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%20Annual%20Plan" class="price-cta" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'Annual'});">Get Annual</a>
+                <p class="price-note">30-day money-back guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <h2>Vexacast vs Traditional Cable</h2>
+        <p class="sub">See why 50,000+ customers made the switch</p>
+        <table class="compare-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Cable / Satellite</th>
+                    <th class="highlight-col">Vexacast</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Monthly Cost</td><td>$80 - $150+</td><td class="highlight-col">From $19/mo</td></tr>
+                <tr><td>Live Channels</td><td>200 - 500</td><td class="highlight-col">49,000+</td></tr>
+                <tr><td>Movies & Series</td><td>Limited VOD</td><td class="highlight-col">80,000+ titles</td></tr>
+                <tr><td>4K Quality</td><td><span class="cross">Limited</span></td><td class="highlight-col"><span class="check">All channels</span></td></tr>
+                <tr><td>Contract Required</td><td><span class="cross">12-24 months</span></td><td class="highlight-col"><span class="check">No contract</span></td></tr>
+                <tr><td>International Channels</td><td><span class="cross">Extra fees</span></td><td class="highlight-col"><span class="check">Included</span></td></tr>
+                <tr><td>Installation</td><td>Technician visit</td><td class="highlight-col">2-minute setup</td></tr>
+                <tr><td>Money-Back Guarantee</td><td><span class="cross">No</span></td><td class="highlight-col"><span class="check">Up to 30 days</span></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="faq">
+        <h2>Pricing FAQ</h2>
+
+        <div class="faq-item">
+            <div class="faq-q">What payment methods do you accept?</div>
+            <div class="faq-a">We accept payments via WhatsApp. Just message us with the plan you want and we'll send you payment options including PayPal, bank transfer, and cryptocurrency. Fast and easy.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Can I switch plans later?</div>
+            <div class="faq-a">Yes. You can upgrade or downgrade at any time. Just contact us on WhatsApp and we'll adjust your plan. The difference is prorated based on your remaining time.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Is there a free trial?</div>
+            <div class="faq-a">We offer a money-back guarantee instead (7, 14, or 30 days depending on your plan). This way you get the full experience with all channels and features. If you're not happy, you get a full refund.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Are there any hidden fees?</div>
+            <div class="faq-a">No. The price you see is the price you pay. No activation fees, no equipment rental, no extra charges for 4K or international channels. Everything is included.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">What happens when my plan expires?</div>
+            <div class="faq-a">Your access continues until the last day of your plan. There's no automatic renewal. When it expires, just message us to renew. No surprise charges.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Can I use it on multiple devices?</div>
+            <div class="faq-a">Each plan includes 1 device connection. If you need more, contact us on WhatsApp and we'll set up a multi-device package at a special rate.</div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <h2>Ready to Start Streaming?</h2>
+        <p>Pick your plan and start watching in minutes.</p>
+        <a href="https://wa.me/33773436514?text=Hi!%20I'm%20interested%20in%20Vexacast%20pricing" class="cta-main" onclick="gtag('event','click',{'event_category':'CTA','event_label':'Pricing-Final'});">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Message Us on WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-brand">Vexacast</div>
+        <div class="footer-links">
+            <a href="/welcome/">Home</a>
+            <a href="/pricing-plans/">Pricing</a>
+            <a href="/welcome/">Channels</a>
+            <a href="/welcome/">Reviews</a>
+        </div>
+        <p class="footer-text">Premium IPTV Service &copy; 2026 &bull; All Rights Reserved</p>
+    </footer>
+
+    <a href="https://wa.me/33773436514?text=Hi!%20I%20have%20a%20question%20about%20Vexacast%20pricing" class="wa-float" onclick="gtag('event','click',{'event_category':'WhatsApp','event_label':'Float-Pricing'});" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script>
+        document.querySelectorAll('.faq-q').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                document.querySelectorAll('.faq-item').forEach(i => { if(i !== item) i.classList.remove('open'); });
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Vexacast - Premium IPTV Service | 49K+ Channels | 4K Streaming</title>
-    <meta name="description" content="Vexacast: Stream 49,000+ premium channels in 4K quality. HBO, ESPN, Disney+ and more. 99.9% uptime, instant setup. Start streaming today!">
-    <meta property="og:title" content="Vexacast - Premium IPTV Service">
-    <meta property="og:description" content="49,000+ channels, 80,000+ VOD, 4K quality streaming. Unlimited entertainment starts here!">
+    <title>Vexacast — Official Site | 4K IPTV, One Simple Plan</title>
+    <meta name="description" content="Vexacast official site — premium 4K IPTV: 49,000+ live channels and 80,000+ movies and series. Plans from $19/month, setup on WhatsApp in minutes, money-back guarantee.">
+    <meta property="og:title" content="Vexacast | Official — Premium 4K IPTV Service">
+    <meta property="og:description" content="Premium 4K IPTV: 49,000+ live channels, 80,000+ movies and series. From $19/month. Setup on WhatsApp in minutes.">
     <meta property="og:type" content="website">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236366F1'/%3E%3Cstop offset='100%25' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M8 10h16v2H8zm0 5h12v2H8zm0 5h14v2H8z' fill='white'/%3E%3C/svg%3E">
+    <meta property="og:image" content="https://vexacast.com/og-image.jpg">
+    <meta property="og:url" content="https://vexacast.com/welcome/">
+    <link rel="canonical" href="https://vexacast.com/welcome/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vexacast | Official — Premium 4K IPTV Service">
+    <meta name="twitter:description" content="Premium 4K IPTV: 49,000+ live channels, 80,000+ movies and series. From $19/month.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Vexacast","url":"https://vexacast.com/welcome/","logo":"https://vexacast.com/favicon.png","contactPoint":{"@type":"ContactPoint","contactType":"customer support","url":"https://wa.me/33773436514"}},{"@type":"WebSite","name":"Vexacast","url":"https://vexacast.com/welcome/"}]}</script>
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H17YZDEMP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,9 +32,12 @@
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         :root{
             --primary:#6366F1;
-            --primary-light:#818CF8;
+            --primary-light:#A5B4FC;
             --accent:#EC4899;
             --accent-light:#F472B6;
+            --cta-accent:#FF6B35;
+            --wc-gold:#FFD700;
+            --wc-green:#16a34a;
             --bg-dark:#09090B;
             --bg-card:#18181B;
             --bg-elevated:#27272A;
@@ -40,7 +52,7 @@
         html{scroll-behavior:smooth}
         body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-dark);color:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-        /* Subtle animated gradient background */
+        /* Hero Section */
         .hero{
             min-height:100vh;
             min-height:100dvh;
@@ -65,7 +77,7 @@
         }
         .orb-1{width:400px;height:400px;background:var(--primary);top:-100px;right:-100px;animation-delay:0s;}
         .orb-2{width:300px;height:300px;background:var(--accent);bottom:10%;left:-50px;animation-delay:-7s;}
-        .orb-3{width:200px;height:200px;background:var(--primary-light);top:40%;right:10%;animation-delay:-14s;}
+        .orb-3{width:200px;height:200px;background:var(--wc-gold);opacity:.18;top:40%;right:10%;animation-delay:-14s;}
         @keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,30px) scale(1.1)}}
 
         /* Grid pattern overlay */
@@ -125,6 +137,20 @@
             animation:pulse-dot 2s ease-in-out infinite;
         }
         @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
+
+        
+        .wc-ball{font-size:1.2rem;display:inline-block;animation:wc-bounce 1.4s ease-in-out infinite;}
+        @keyframes wc-bounce{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-4px) rotate(20deg)}}
+        .wc-chip{
+            display:inline-flex;align-items:center;gap:8px;
+            background:rgba(255,215,0,.08);
+            border:1px solid rgba(255,215,0,.35);
+            color:var(--wc-gold);
+            padding:7px 16px;border-radius:50px;
+            font-size:.8rem;font-weight:700;letter-spacing:.02em;
+            margin-bottom:18px;
+        }
+        .wc-chip .wc-ball{font-size:1rem;}
 
         .hero-title{
             font-size:clamp(2rem,7vw,3.5rem);
@@ -333,22 +359,6 @@
             font-size:.9rem;
             color:var(--gray-500);
             margin-left:4px;
-        }
-        .price-was{
-            font-size:.85rem;
-            color:var(--gray-500);
-            text-decoration:line-through;
-            margin-top:4px;
-        }
-        .price-save{
-            display:inline-block;
-            background:rgba(16,185,129,.1);
-            color:var(--success);
-            padding:3px 10px;
-            border-radius:6px;
-            font-size:.7rem;
-            font-weight:600;
-            margin-left:8px;
         }
 
         .price-convert{
@@ -590,6 +600,40 @@
             font-size:.95rem;
         }
 
+        /* Site Nav */
+        .site-nav{
+            background:rgba(9,9,11,.85);
+            backdrop-filter:blur(12px);
+            border-bottom:1px solid var(--bg-elevated);
+            padding:14px 20px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            position:sticky;
+            top:0;
+            z-index:998;
+        }
+        .nav-brand{
+            font-size:1.1rem;
+            font-weight:800;
+            text-decoration:none;
+            background:linear-gradient(135deg,var(--primary-light),var(--accent-light));
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+        .nav-links{display:flex;gap:6px;align-items:center}
+        .nav-links a{
+            color:var(--gray-400);
+            text-decoration:none;
+            font-size:.8rem;
+            font-weight:500;
+            padding:6px 12px;
+            border-radius:6px;
+            transition:all .2s;
+        }
+        .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.05)}
+        .nav-links a.active{color:var(--white);background:rgba(99,102,241,.15)}
+
         /* Footer */
         footer{
             padding:40px 20px;
@@ -600,11 +644,14 @@
         .footer-brand{
             font-size:1.3rem;
             font-weight:800;
-            margin-bottom:8px;
+            margin-bottom:12px;
             background:linear-gradient(135deg,var(--primary-light),var(--accent-light));
             -webkit-background-clip:text;
             -webkit-text-fill-color:transparent;
         }
+        .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:12px;flex-wrap:wrap}
+        .footer-links a{color:var(--gray-400);text-decoration:none;font-size:.8rem;font-weight:500;transition:color .2s}
+        .footer-links a:hover{color:var(--white)}
         .footer-text{font-size:.75rem;color:var(--gray-500)}
 
         /* WhatsApp Float */
@@ -666,6 +713,11 @@
         }
 
         /* Responsive */
+        @media(max-width:600px){
+            .site-nav{padding:10px 14px}
+            .nav-links a{font-size:.7rem;padding:5px 8px}
+            .nav-brand{font-size:.95rem}
+        }
         @media(min-width:768px){
             .hero-content{padding:100px 40px 60px;max-width:800px}
             .cta-group{flex-direction:row;justify-content:center}
@@ -685,16 +737,36 @@
         @media(prefers-reduced-motion:reduce){
             *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
         }
+
+        
+
+        
+        .wc-addon{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 2px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(240,180,41,.05));border:1px solid rgba(255,215,0,.35)}
+        .wc-addon-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--wc-gold);white-space:nowrap}
+        .wc-addon-copy{font-size:12.5px;color:var(--gray-300);font-weight:500}
+        .wc-addon-price{color:var(--wc-gold);font-weight:800;font-size:14px;white-space:nowrap}
+        .cat-chip{padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:rgba(255,255,255,.85);font-weight:600;font-size:.95rem}
     </style>
 </head>
 <body>
+    <!-- Site Navigation -->
+    <nav class="site-nav">
+        <a href="/welcome/" class="nav-brand">Vexacast</a>
+        <div class="nav-links">
+            <a href="/welcome/" class="active" data-i18n-nav="home">Home</a>
+            <a href="/pricing-plans/" data-i18n-nav="pricing">Pricing</a>
+        </div>
+    </nav>
+
     <!-- Language Switcher -->
     <div class="lang-switcher">
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="fr">FR</button>
         <button class="lang-btn" data-lang="nl">NL</button>
+        <button class="lang-btn" data-lang="es">ES</button>
     </div>
+
 
     <section class="hero">
         <div class="orb orb-1"></div>
@@ -703,19 +775,18 @@
         <div class="grid-pattern"></div>
 
         <div class="hero-content">
-            <div class="notice"><span data-i18n="notice">Existing customers: New WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
-            <div class="badge"><span class="badge-dot"></span> <span data-i18n="badge">50,000+ Active Subscribers</span></div>
-            <h1 class="hero-title"><span data-i18n="heroTitle1">Stream Everything.</span><br><span data-i18n="heroTitle2">Pay Less.</span></h1>
+            <div class="notice"><span data-i18n="notice">Premium 4K IPTV from $19/month • Questions? WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
+            <h1 class="hero-title"><span data-i18n="heroTitle1">Vexacast — Your TV, Upgraded.</span> <span data-i18n="heroTitle2">One Simple Plan.</span></h1>
             <p class="hero-sub" data-i18n="heroSub">Access <strong>49,000+ live channels</strong> and <strong>80,000+ movies</strong> in stunning 4K. No contracts, no hidden fees. Just entertainment.</p>
 
             <div class="stats">
                 <div class="stat"><div class="stat-val">49K+</div><div class="stat-label" data-i18n="channels">Channels</div></div>
-                <div class="stat"><div class="stat-val">99.9%</div><div class="stat-label" data-i18n="uptime">Uptime</div></div>
+                <div class="stat"><div class="stat-val">80K+</div><div class="stat-label" data-i18n="uptime">Movies &amp; series</div></div>
                 <div class="stat"><div class="stat-val">4K</div><div class="stat-label" data-i18n="quality">Quality</div></div>
             </div>
 
             <div class="cta-group">
-                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20to%20get%20Vexacast%20Premium%20IPTV" class="cta-main" onclick="gtag('event','click',{'event_category':'CTA','event_label':'Hero'});">
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20to%20get%20Vexacast%20Premium%20IPTV" class="cta-main" id="heroCTA" onclick="gtag('event','click',{'event_category':'CTA','event_label':'Hero'});">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     <span data-i18n="ctaMain">Start Streaming Now</span>
                 </a>
@@ -741,18 +812,17 @@
             <div class="price-card">
                 <div class="price-header">
                     <div class="price-name" data-i18n="planMonthly">Monthly</div>
-                    <div class="price-desc" data-i18n="planMonthlyDesc">Perfect for trying us out</div>
+                    <div class="price-desc" data-i18n="planMonthlyDesc">Flexible access</div>
                 </div>
                 <div class="price-main">
                     <div class="price-amount">
-                        <span class="price-currency">&pound;</span>
-                        <span class="price-value">15</span>
+                        <span class="price-currency">$</span>
+                        <span class="price-value">19</span>
                         <span class="price-period" data-i18n="perMonth">/month</span>
                     </div>
-                    <div class="price-was">&pound;22 <span class="price-save" data-i18n="save32">Save 32%</span></div>
                 </div>
                 <div class="price-convert">
-                    <span class="convert-item"><strong>$19</strong> USD</span>
+                    <span class="convert-item">or <strong>&pound;17</strong> GBP</span>
                     <span class="convert-item"><strong>&euro;19</strong> EUR</span>
                 </div>
                 <ul class="price-features">
@@ -760,8 +830,9 @@
                     <li data-i18n="featHD4K">HD & 4K Quality</li>
                     <li data-i18n="feat1Device">1 Device Connection</li>
                     <li data-i18n="feat7Replay">7-Day Replay</li>
+                    <li data-i18n="featEPG">Premium EPG Guide</li>
                 </ul>
-                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%20Monthly%20Plan" class="price-cta" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'Monthly'});" data-i18n="getMonthly">Get Monthly</a>
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%20Monthly%20Plan" class="price-cta" id="monthlyPlanCTA" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'Monthly'});"><span data-i18n="getMonthly">Get Monthly</span></a>
                 <p class="price-note" data-i18n="note7day">7-day money-back guarantee</p>
             </div>
 
@@ -769,29 +840,29 @@
                 <span class="popular-badge" data-i18n="mostPopular">Most Popular</span>
                 <div class="price-header">
                     <div class="price-name" data-i18n="plan3Months">3 Months</div>
-                    <div class="price-desc" data-i18n="plan3MonthsDesc">Best for regular viewers</div>
+                    <div class="price-desc" data-i18n="plan3MonthsDesc">Best value for regular viewers</div>
                 </div>
                 <div class="price-main">
                     <div class="price-amount">
-                        <span class="price-currency">&pound;</span>
-                        <span class="price-value">29</span>
+                        <span class="price-currency">$</span>
+                        <span class="price-value">39</span>
                         <span class="price-period" data-i18n="perQuarter">/quarter</span>
                     </div>
-                    <div class="price-was">&pound;45 <span class="price-save" data-i18n="save36">Save 36%</span></div>
                 </div>
                 <div class="price-convert">
-                    <span class="convert-item"><strong>$39</strong> USD</span>
-                    <span class="convert-item"><strong>&euro;39</strong> EUR</span>
+                    <span class="convert-item">or <strong>&pound;33</strong> GBP</span>
+                    <span class="convert-item"><strong>&euro;36</strong> EUR</span>
                 </div>
                 <ul class="price-features">
                     <li data-i18n="feat49k">49,000+ Live Channels</li>
-                    <li data-i18n="feat4KUltra">4K Ultra HD Quality</li>
+                    <li data-i18n="feat4KUltra">Full 4K Ultra HD Quality</li>
                     <li data-i18n="feat1Device">1 Device Connection</li>
                     <li data-i18n="feat14Replay">14-Day Replay</li>
+                    <li data-i18n="featAntiFreeze">Anti-Freeze Technology</li>
                     <li data-i18n="featPriority">Priority Support</li>
                 </ul>
-                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%203-Month%20Plan" class="price-cta" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'3-Month'});" data-i18n="get3Months">Get 3 Months</a>
-                <p class="price-note" data-i18n="note30day">30-day money-back guarantee</p>
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%203-Month%20Plan" class="price-cta" id="quarterPlanCTA" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'3-Month'});"><span data-i18n="get3Months">Get 3 Months</span></a>
+                <p class="price-note" data-i18n="note14day">14-day money-back guarantee</p>
             </div>
 
             <div class="price-card">
@@ -801,25 +872,25 @@
                 </div>
                 <div class="price-main">
                     <div class="price-amount">
-                        <span class="price-currency">&pound;</span>
-                        <span class="price-value">59</span>
+                        <span class="price-currency">$</span>
+                        <span class="price-value">79</span>
                         <span class="price-period" data-i18n="perYear">/year</span>
                     </div>
-                    <div class="price-was">&pound;99 <span class="price-save" data-i18n="save40">Save 40%</span></div>
                 </div>
                 <div class="price-convert">
-                    <span class="convert-item"><strong>$79</strong> USD</span>
+                    <span class="convert-item">or <strong>&pound;56</strong> GBP</span>
                     <span class="convert-item"><strong>&euro;69</strong> EUR</span>
                 </div>
                 <ul class="price-features">
                     <li data-i18n="feat49k">49,000+ Live Channels</li>
                     <li data-i18n="feat80kVOD">80,000+ Movies & Shows</li>
-                    <li data-i18n="feat4KUltra">4K Ultra HD Quality</li>
+                    <li data-i18n="feat4KUltra">Full 4K Ultra HD Quality</li>
                     <li data-i18n="feat1Device">1 Device Connection</li>
                     <li data-i18n="feat30Replay">30-Day Replay</li>
+                    <li data-i18n="featAntiFreeze">Anti-Freeze Technology</li>
                     <li data-i18n="featVIP">VIP Support</li>
                 </ul>
-                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%20Annual%20Plan" class="price-cta" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'Annual'});" data-i18n="getAnnual">Get Annual</a>
+                <a href="https://wa.me/33773436514?text=Hi!%20I%20want%20the%20Annual%20Plan" class="price-cta" id="annualPlanCTA" onclick="gtag('event','click',{'event_category':'Pricing','event_label':'Annual'});"><span data-i18n="getAnnual">Get Annual</span></a>
                 <p class="price-note" data-i18n="note30day">30-day money-back guarantee</p>
             </div>
         </div>
@@ -827,39 +898,8 @@
 
     <section class="channels">
         <div class="section-head"><h2 class="section-title" data-i18n="channelsTitle">All Your Favorites</h2></div>
-        <div class="logo-carousel">
-            <div class="logo-track">
-                <div class="logo-item"><img src="assets/logos-small/hbo-logo.png" alt="HBO" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/cnn-logo.png" alt="CNN" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/discovery-channel-tv-logo.png" alt="Discovery" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/nbc-tv-logo.png" alt="NBC" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/abc-tv-logo-Copy.png" alt="ABC" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/cbs-tv-logo.png" alt="CBS" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/history-tv-logo.png" alt="History" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/prime-logo.png" alt="Prime" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/hbo-logo.png" alt="HBO" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/cnn-logo.png" alt="CNN" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/discovery-channel-tv-logo.png" alt="Discovery" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/nbc-tv-logo.png" alt="NBC" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/abc-tv-logo-Copy.png" alt="ABC" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/cbs-tv-logo.png" alt="CBS" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/history-tv-logo.png" alt="History" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-small/prime-logo.png" alt="Prime" loading="lazy"></div>
-            </div>
-        </div>
-        <div class="logo-carousel">
-            <div class="logo-track reverse">
-                <div class="logo-item"><img src="assets/logos-big/bine-sport-logo-1.png" alt="BeIN" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/BTSport.png" alt="BT Sport" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/disnep-1.png" alt="Disney" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/Font-HBO-Logo.png" alt="HBO Max" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/UFC_Logo-1.png" alt="UFC" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/bine-sport-logo-1.png" alt="BeIN" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/BTSport.png" alt="BT Sport" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/disnep-1.png" alt="Disney" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/Font-HBO-Logo.png" alt="HBO Max" loading="lazy"></div>
-                <div class="logo-item"><img src="assets/logos-big/UFC_Logo-1.png" alt="UFC" loading="lazy"></div>
-            </div>
+        <div class="cat-chips" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:900px;margin:0 auto;padding:0 20px;">
+            <span class="cat-chip" data-i18n="catSports">Live sports</span><span class="cat-chip" data-i18n="catMovies">Movies</span><span class="cat-chip" data-i18n="catSeries">Series</span><span class="cat-chip" data-i18n="catNews">News</span><span class="cat-chip" data-i18n="catKids">Kids</span><span class="cat-chip" data-i18n="catDocs">Documentaries</span><span class="cat-chip" data-i18n="catIntl">International channels</span>
         </div>
     </section>
 
@@ -886,75 +926,34 @@
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <div class="feature-content">
-                    <h3 data-i18n="why3Title">Zero Buffering</h3>
-                    <p data-i18n="why3Desc">99.9% uptime with anti-freeze technology</p>
+                    <h3 data-i18n="why3Title">Anti-Freeze Technology</h3>
+                    <p data-i18n="why3Desc">Stable streams, built to hold up at peak hours</p>
                 </div>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">💎</div>
                 <div class="feature-content">
-                    <h3 data-i18n="why4Title">4K Ultra HD</h3>
+                    <h3 data-i18n="why4Title">Full 4K Quality</h3>
                     <p data-i18n="why4Desc">Crystal clear quality on any screen size</p>
                 </div>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📱</div>
                 <div class="feature-content">
-                    <h3 data-i18n="why5Title">All Devices</h3>
+                    <h3 data-i18n="why5Title">All Devices Supported</h3>
                     <p data-i18n="why5Desc">Smart TV, FireStick, Android, iOS, PC</p>
                 </div>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🚀</div>
+                <div class="feature-icon">📅</div>
                 <div class="feature-content">
-                    <h3 data-i18n="why6Title">2-Minute Setup</h3>
-                    <p data-i18n="why6Desc">Instant activation, start watching immediately</p>
+                    <h3 data-i18n="why6Title">Premium EPG Guide</h3>
+                    <p data-i18n="why6Desc">Know what's playing 7 days ahead</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="reviews">
-        <div class="section-head">
-            <span class="section-tag" data-i18n="reviewsTag">Testimonials</span>
-            <h2 class="section-title" data-i18n="reviewsTitle">What Our Customers Say</h2>
-        </div>
-        <div class="review-grid">
-            <div class="review">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text" data-i18n="review1">"Switched from cable 6 months ago. Saving over £80/month with way more content. The quality is incredible."</p>
-                <div class="review-author">
-                    <div class="author-avatar">JM</div>
-                    <div>
-                        <div class="author-name">James M.</div>
-                        <div class="author-badge" data-i18n="verified">Verified Customer</div>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text" data-i18n="review2">"Setup literally took 2 minutes. 4K quality is amazing — better than my old satellite subscription."</p>
-                <div class="review-author">
-                    <div class="author-avatar">SK</div>
-                    <div>
-                        <div class="author-name">Sarah K.</div>
-                        <div class="author-badge" data-i18n="premium">Premium Member</div>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text" data-i18n="review3">"All Premier League matches without expensive sports packages. Support team is responsive and helpful."</p>
-                <div class="review-author">
-                    <div class="author-avatar">MT</div>
-                    <div>
-                        <div class="author-name">Mike T.</div>
-                        <div class="author-badge" data-i18n="sportsFan">Sports Fan</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="guarantee">
         <div class="guarantee-box">
@@ -969,8 +968,8 @@
         <div class="orb orb-2"></div>
         <div class="final-content">
             <h2 data-i18n="finalTitle">Ready to Start Streaming?</h2>
-            <p data-i18n="finalSub">Join 50,000+ happy customers enjoying unlimited entertainment</p>
-            <a href="https://wa.me/33773436514?text=Hi!%20I'm%20ready%20to%20get%20Vexacast" class="cta-main" onclick="gtag('event','click',{'event_category':'CTA','event_label':'Final'});">
+            <p data-i18n="finalSub">Set up in minutes on WhatsApp. Money-back guarantee.</p>
+            <a href="https://wa.me/33773436514?text=Hi!%20I'm%20ready%20to%20get%20Vexacast" class="cta-main" id="finalCTA" onclick="gtag('event','click',{'event_category':'CTA','event_label':'Final'});">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 <span data-i18n="ctaWhatsApp">Message Us on WhatsApp</span>
             </a>
@@ -979,6 +978,10 @@
 
     <footer>
         <div class="footer-brand">Vexacast</div>
+        <div class="footer-links">
+            <a href="/welcome/">Home</a>
+            <a href="/pricing-plans/">Pricing</a>
+        </div>
         <p class="footer-text" data-i18n="footer">Premium IPTV Service © 2026 • All Rights Reserved</p>
     </footer>
 
@@ -987,13 +990,11 @@
     </a>
 
     <script>
-        // Translations
+        // Translations (adapted from Vexacast for Vexacast)
         const translations = {
             en: {
-                notice: "Existing customers: New WhatsApp:",
-                badge: "50,000+ Active Subscribers",
-                heroTitle1: "Stream Everything.",
-                heroTitle2: "Pay Less.",
+                heroTitle1: "Vexacast — Your TV, Upgraded.",
+                heroTitle2: "One Simple Plan.",
                 heroSub: 'Access <strong>49,000+ live channels</strong> and <strong>80,000+ movies</strong> in stunning 4K. No contracts, no hidden fees. Just entertainment.',
                 channels: "Channels",
                 uptime: "Uptime",
@@ -1007,33 +1008,32 @@
                 pricingTitle: "Choose Your Plan",
                 pricingSub: "All plans include full access. No restrictions.",
                 planMonthly: "Monthly",
-                planMonthlyDesc: "Perfect for trying us out",
+                planMonthlyDesc: "Flexible access",
                 plan3Months: "3 Months",
-                plan3MonthsDesc: "Best for regular viewers",
+                plan3MonthsDesc: "Best value for regular viewers",
                 planAnnual: "Annual",
                 planAnnualDesc: "Maximum value for enthusiasts",
                 perMonth: "/month",
                 perQuarter: "/quarter",
                 perYear: "/year",
-                save32: "Save 32%",
-                save36: "Save 36%",
-                save40: "Save 40%",
                 mostPopular: "Most Popular",
                 feat49k: "49,000+ Live Channels",
                 featHD4K: "HD & 4K Quality",
-                feat4KUltra: "4K Ultra HD Quality",
+                feat4KUltra: "Full 4K Ultra HD Quality",
                 feat1Device: "1 Device Connection",
-                feat2Device: "2 Device Connections",
                 feat7Replay: "7-Day Replay",
                 feat14Replay: "14-Day Replay",
                 feat30Replay: "30-Day Replay",
                 feat80kVOD: "80,000+ Movies & Shows",
+                featEPG: "Premium EPG Guide",
+                featAntiFreeze: "Anti-Freeze Technology",
                 featPriority: "Priority Support",
                 featVIP: "VIP Support",
                 getMonthly: "Get Monthly",
                 get3Months: "Get 3 Months",
                 getAnnual: "Get Annual",
                 note7day: "7-day money-back guarantee",
+                note14day: "14-day money-back guarantee",
                 note30day: "30-day money-back guarantee",
                 channelsTitle: "All Your Favorites",
                 whyTag: "Why Vexacast",
@@ -1042,34 +1042,32 @@
                 why1Desc: "Sports, movies, news, kids content from around the world",
                 why2Title: "80,000+ On-Demand",
                 why2Desc: "Latest movies and series updated daily",
-                why3Title: "Zero Buffering",
-                why3Desc: "99.9% uptime with anti-freeze technology",
-                why4Title: "4K Ultra HD",
+                why3Title: "Anti-Freeze Technology",
+                why4Title: "Full 4K Quality",
                 why4Desc: "Crystal clear quality on any screen size",
-                why5Title: "All Devices",
+                why5Title: "All Devices Supported",
                 why5Desc: "Smart TV, FireStick, Android, iOS, PC",
-                why6Title: "2-Minute Setup",
-                why6Desc: "Instant activation, start watching immediately",
-                reviewsTag: "Testimonials",
-                reviewsTitle: "What Our Customers Say",
-                review1: '"Switched from cable 6 months ago. Saving over £80/month with way more content. The quality is incredible."',
-                review2: '"Setup literally took 2 minutes. 4K quality is amazing — better than my old satellite subscription."',
-                review3: '"All Premier League matches without expensive sports packages. Support team is responsive and helpful."',
-                verified: "Verified Customer",
-                premium: "Premium Member",
-                sportsFan: "Sports Fan",
+                why6Title: "Premium EPG Guide",
+                why6Desc: "Know what's playing 7 days ahead",
                 guaranteeTitle: "30-Day Money-Back Guarantee",
                 guaranteeText: "Try Vexacast completely risk-free. If you're not satisfied for any reason, we'll refund your payment. No questions asked.",
                 finalTitle: "Ready to Start Streaming?",
-                finalSub: "Join 50,000+ happy customers enjoying unlimited entertainment",
                 ctaWhatsApp: "Message Us on WhatsApp",
-                footer: "Premium IPTV Service © 2026 • All Rights Reserved"
+                footer: "Premium IPTV Service © 2026 • All Rights Reserved",
+                // WhatsApp messages
+                waHero: "Hi! I want to get Vexacast Premium IPTV",
+                waMonthly: "Hi! I want the Monthly Plan",
+                wa3Month: "Hi! I want the 3-Month Plan",
+                waAnnual: "Hi! I want the Annual Plan",
+                waFinal: "Hi! I'm ready to get Vexacast",
+                navHome: "Home",
+                navPricing: "Pricing",
+                navChannels: "Channels",
+                navReviews: "Reviews"
             },
             de: {
-                notice: "Bestandskunden: Neue WhatsApp:",
-                badge: "50.000+ Aktive Abonnenten",
-                heroTitle1: "Alles streamen.",
-                heroTitle2: "Weniger zahlen.",
+                heroTitle1: "Vexacast — Dein TV, neu gedacht.",
+                heroTitle2: "Ein einfaches Abo.",
                 heroSub: 'Zugang zu <strong>49.000+ Live-Kanälen</strong> und <strong>80.000+ Filmen</strong> in atemberaubendem 4K. Keine Verträge, keine versteckten Gebühren. Nur Unterhaltung.',
                 channels: "Kanäle",
                 uptime: "Verfügbarkeit",
@@ -1083,7 +1081,7 @@
                 pricingTitle: "Wähle Deinen Tarif",
                 pricingSub: "Alle Tarife beinhalten vollen Zugang. Keine Einschränkungen.",
                 planMonthly: "Monatlich",
-                planMonthlyDesc: "Perfekt zum Ausprobieren",
+                planMonthlyDesc: "Flexible Zugang",
                 plan3Months: "3 Monate",
                 plan3MonthsDesc: "Ideal für regelmäßige Zuschauer",
                 planAnnual: "Jährlich",
@@ -1091,25 +1089,24 @@
                 perMonth: "/Monat",
                 perQuarter: "/Quartal",
                 perYear: "/Jahr",
-                save32: "32% Sparen",
-                save36: "36% Sparen",
-                save40: "40% Sparen",
                 mostPopular: "Am Beliebtesten",
                 feat49k: "49.000+ Live-Kanäle",
                 featHD4K: "HD & 4K Qualität",
-                feat4KUltra: "4K Ultra HD Qualität",
+                feat4KUltra: "Volle 4K Ultra HD Qualität",
                 feat1Device: "1 Geräteverbindung",
-                feat2Device: "2 Geräteverbindungen",
                 feat7Replay: "7-Tage-Aufzeichnung",
                 feat14Replay: "14-Tage-Aufzeichnung",
                 feat30Replay: "30-Tage-Aufzeichnung",
                 feat80kVOD: "80.000+ Filme & Serien",
+                featEPG: "Premium EPG-Guide",
+                featAntiFreeze: "Anti-Freeze-Technologie",
                 featPriority: "Prioritäts-Support",
                 featVIP: "VIP-Support",
                 getMonthly: "Monatlich Buchen",
                 get3Months: "3 Monate Buchen",
                 getAnnual: "Jährlich Buchen",
                 note7day: "7-Tage-Geld-zurück-Garantie",
+                note14day: "14-Tage-Geld-zurück-Garantie",
                 note30day: "30-Tage-Geld-zurück-Garantie",
                 channelsTitle: "Alle Deine Favoriten",
                 whyTag: "Warum Vexacast",
@@ -1118,34 +1115,31 @@
                 why1Desc: "Sport, Filme, Nachrichten, Kinderinhalte aus aller Welt",
                 why2Title: "80.000+ On-Demand",
                 why2Desc: "Neueste Filme und Serien täglich aktualisiert",
-                why3Title: "Kein Puffern",
-                why3Desc: "99,9% Verfügbarkeit mit Anti-Freeze-Technologie",
-                why4Title: "4K Ultra HD",
+                why3Title: "Anti-Freeze-Technologie",
+                why4Title: "Volle 4K-Qualität",
                 why4Desc: "Kristallklare Qualität auf jeder Bildschirmgröße",
-                why5Title: "Alle Geräte",
+                why5Title: "Alle Geräte Unterstützt",
                 why5Desc: "Smart TV, FireStick, Android, iOS, PC",
-                why6Title: "2-Minuten-Setup",
-                why6Desc: "Sofortige Aktivierung, sofort losschauen",
-                reviewsTag: "Kundenstimmen",
-                reviewsTitle: "Was Unsere Kunden Sagen",
-                review1: '"Vor 6 Monaten vom Kabel gewechselt. Spare über 80€/Monat bei viel mehr Inhalt. Die Qualität ist unglaublich."',
-                review2: '"Das Setup hat buchstäblich 2 Minuten gedauert. 4K-Qualität ist fantastisch — besser als mein altes Satellitenabo."',
-                review3: '"Alle Bundesliga-Spiele ohne teure Sportpakete. Das Support-Team ist reaktionsschnell und hilfsbereit."',
-                verified: "Verifizierter Kunde",
-                premium: "Premium-Mitglied",
-                sportsFan: "Sport-Fan",
+                why6Title: "Premium EPG-Guide",
+                why6Desc: "Wissen Sie 7 Tage im Voraus, was läuft",
                 guaranteeTitle: "30-Tage-Geld-zurück-Garantie",
                 guaranteeText: "Teste Vexacast völlig risikofrei. Wenn Du aus irgendeinem Grund nicht zufrieden bist, erstatten wir Dir Dein Geld zurück. Ohne Fragen.",
                 finalTitle: "Bereit zum Streamen?",
-                finalSub: "Schließe Dich 50.000+ zufriedenen Kunden an",
                 ctaWhatsApp: "Schreib uns auf WhatsApp",
-                footer: "Premium IPTV Service © 2026 • Alle Rechte vorbehalten"
+                footer: "Premium IPTV Service © 2026 • Alle Rechte vorbehalten",
+                waHero: "Hallo! Ich möchte Vexacast Premium IPTV",
+                waMonthly: "Hallo! Ich möchte den Monatlichen Tarif",
+                wa3Month: "Hallo! Ich möchte den 3-Monate-Tarif",
+                waAnnual: "Hallo! Ich möchte den Jährlichen Tarif",
+                waFinal: "Hallo! Ich bin bereit, Vexacast zu bekommen",
+                navHome: "Startseite",
+                navPricing: "Preise",
+                navChannels: "Kanäle",
+                navReviews: "Bewertungen"
             },
             fr: {
-                notice: "Clients existants : Nouveau WhatsApp :",
-                badge: "50 000+ Abonnés Actifs",
-                heroTitle1: "Streamez Tout.",
-                heroTitle2: "Payez Moins.",
+                heroTitle1: "Vexacast — Votre TV, en mieux.",
+                heroTitle2: "Une seule formule simple.",
                 heroSub: 'Accédez à <strong>49 000+ chaînes en direct</strong> et <strong>80 000+ films</strong> en 4K époustouflant. Sans engagement, sans frais cachés. Juste du divertissement.',
                 channels: "Chaînes",
                 uptime: "Disponibilité",
@@ -1159,7 +1153,7 @@
                 pricingTitle: "Choisissez Votre Offre",
                 pricingSub: "Toutes les offres incluent un accès complet. Sans restrictions.",
                 planMonthly: "Mensuel",
-                planMonthlyDesc: "Parfait pour essayer",
+                planMonthlyDesc: "Accès flexible",
                 plan3Months: "3 Mois",
                 plan3MonthsDesc: "Idéal pour les téléspectateurs réguliers",
                 planAnnual: "Annuel",
@@ -1167,25 +1161,24 @@
                 perMonth: "/mois",
                 perQuarter: "/trimestre",
                 perYear: "/an",
-                save32: "Économisez 32%",
-                save36: "Économisez 36%",
-                save40: "Économisez 40%",
                 mostPopular: "Le Plus Populaire",
                 feat49k: "49 000+ Chaînes en Direct",
                 featHD4K: "Qualité HD & 4K",
-                feat4KUltra: "Qualité 4K Ultra HD",
+                feat4KUltra: "Qualité 4K Ultra HD Complète",
                 feat1Device: "1 Appareil Connecté",
-                feat2Device: "2 Appareils Connectés",
                 feat7Replay: "Replay 7 Jours",
                 feat14Replay: "Replay 14 Jours",
                 feat30Replay: "Replay 30 Jours",
                 feat80kVOD: "80 000+ Films & Séries",
+                featEPG: "Guide EPG Premium",
+                featAntiFreeze: "Technologie Anti-Gel",
                 featPriority: "Support Prioritaire",
                 featVIP: "Support VIP",
                 getMonthly: "Choisir Mensuel",
                 get3Months: "Choisir 3 Mois",
                 getAnnual: "Choisir Annuel",
                 note7day: "Garantie remboursement 7 jours",
+                note14day: "Garantie remboursement 14 jours",
                 note30day: "Garantie remboursement 30 jours",
                 channelsTitle: "Tous Vos Favoris",
                 whyTag: "Pourquoi Vexacast",
@@ -1194,34 +1187,31 @@
                 why1Desc: "Sport, films, actualités, contenu enfants du monde entier",
                 why2Title: "80 000+ À la Demande",
                 why2Desc: "Derniers films et séries mis à jour quotidiennement",
-                why3Title: "Zéro Mise en Mémoire Tampon",
-                why3Desc: "99,9% de disponibilité avec technologie anti-gel",
-                why4Title: "4K Ultra HD",
+                why3Title: "Technologie Anti-Gel",
+                why4Title: "Qualité 4K Complète",
                 why4Desc: "Qualité cristalline sur tous les écrans",
-                why5Title: "Tous les Appareils",
+                why5Title: "Tous les Appareils Supportés",
                 why5Desc: "Smart TV, FireStick, Android, iOS, PC",
-                why6Title: "Installation en 2 Minutes",
-                why6Desc: "Activation instantanée, regardez immédiatement",
-                reviewsTag: "Témoignages",
-                reviewsTitle: "Ce que Disent Nos Clients",
-                review1: '"J\'ai quitté le câble il y a 6 mois. J\'économise plus de 80€/mois avec beaucoup plus de contenu. La qualité est incroyable."',
-                review2: '"L\'installation a pris littéralement 2 minutes. La qualité 4K est incroyable — mieux que mon ancien abonnement satellite."',
-                review3: '"Tous les matchs de Ligue 1 sans forfaits sportifs coûteux. L\'équipe de support est réactive et serviable."',
-                verified: "Client Vérifié",
-                premium: "Membre Premium",
-                sportsFan: "Fan de Sport",
+                why6Title: "Guide EPG Premium",
+                why6Desc: "Sachez ce qui passe 7 jours à l'avance",
                 guaranteeTitle: "Garantie Remboursement 30 Jours",
                 guaranteeText: "Essayez Vexacast sans risque. Si vous n'êtes pas satisfait pour quelque raison que ce soit, nous vous rembourserons. Sans questions.",
                 finalTitle: "Prêt à Commencer à Streamer ?",
-                finalSub: "Rejoignez 50 000+ clients satisfaits",
                 ctaWhatsApp: "Contactez-nous sur WhatsApp",
-                footer: "Service IPTV Premium © 2026 • Tous Droits Réservés"
+                footer: "Service IPTV Premium © 2026 • Tous Droits Réservés",
+                waHero: "Bonjour ! Je veux Vexacast Premium IPTV",
+                waMonthly: "Bonjour ! Je veux l'offre Mensuelle",
+                wa3Month: "Bonjour ! Je veux l'offre 3 Mois",
+                waAnnual: "Bonjour ! Je veux l'offre Annuelle",
+                waFinal: "Bonjour ! Je suis prêt à obtenir Vexacast",
+                navHome: "Accueil",
+                navPricing: "Tarifs",
+                navChannels: "Chaînes",
+                navReviews: "Avis"
             },
             nl: {
-                notice: "Bestaande klanten: Nieuwe WhatsApp:",
-                badge: "50.000+ Actieve Abonnees",
-                heroTitle1: "Stream Alles.",
-                heroTitle2: "Betaal Minder.",
+                heroTitle1: "Vexacast — Jouw tv, beter.",
+                heroTitle2: "Eén simpel abonnement.",
                 heroSub: 'Toegang tot <strong>49.000+ live kanalen</strong> en <strong>80.000+ films</strong> in verbluffende 4K. Geen contracten, geen verborgen kosten. Alleen entertainment.',
                 channels: "Kanalen",
                 uptime: "Uptime",
@@ -1235,7 +1225,7 @@
                 pricingTitle: "Kies Je Abonnement",
                 pricingSub: "Alle abonnementen bevatten volledige toegang. Geen beperkingen.",
                 planMonthly: "Maandelijks",
-                planMonthlyDesc: "Perfect om uit te proberen",
+                planMonthlyDesc: "Flexibele toegang",
                 plan3Months: "3 Maanden",
                 plan3MonthsDesc: "Beste keuze voor regelmatige kijkers",
                 planAnnual: "Jaarlijks",
@@ -1243,25 +1233,24 @@
                 perMonth: "/maand",
                 perQuarter: "/kwartaal",
                 perYear: "/jaar",
-                save32: "Bespaar 32%",
-                save36: "Bespaar 36%",
-                save40: "Bespaar 40%",
                 mostPopular: "Meest Populair",
                 feat49k: "49.000+ Live Kanalen",
                 featHD4K: "HD & 4K Kwaliteit",
-                feat4KUltra: "4K Ultra HD Kwaliteit",
+                feat4KUltra: "Volledige 4K Ultra HD Kwaliteit",
                 feat1Device: "1 Apparaat Verbinding",
-                feat2Device: "2 Apparaat Verbindingen",
                 feat7Replay: "7-Dagen Terugkijken",
                 feat14Replay: "14-Dagen Terugkijken",
                 feat30Replay: "30-Dagen Terugkijken",
                 feat80kVOD: "80.000+ Films & Series",
+                featEPG: "Premium EPG-Gids",
+                featAntiFreeze: "Anti-Freeze Technologie",
                 featPriority: "Prioriteit Support",
                 featVIP: "VIP Support",
                 getMonthly: "Kies Maandelijks",
                 get3Months: "Kies 3 Maanden",
                 getAnnual: "Kies Jaarlijks",
                 note7day: "7-dagen geld-terug-garantie",
+                note14day: "14-dagen geld-terug-garantie",
                 note30day: "30-dagen geld-terug-garantie",
                 channelsTitle: "Al Je Favorieten",
                 whyTag: "Waarom Vexacast",
@@ -1270,43 +1259,157 @@
                 why1Desc: "Sport, films, nieuws, kindercontent van over de hele wereld",
                 why2Title: "80.000+ On-Demand",
                 why2Desc: "Nieuwste films en series dagelijks bijgewerkt",
-                why3Title: "Geen Buffering",
-                why3Desc: "99,9% uptime met anti-freeze technologie",
-                why4Title: "4K Ultra HD",
+                why3Title: "Anti-Freeze Technologie",
+                why4Title: "Volledige 4K-Kwaliteit",
                 why4Desc: "Kristalheldere kwaliteit op elk schermformaat",
-                why5Title: "Alle Apparaten",
+                why5Title: "Alle Apparaten Ondersteund",
                 why5Desc: "Smart TV, FireStick, Android, iOS, PC",
-                why6Title: "2-Minuten Setup",
-                why6Desc: "Directe activatie, begin meteen met kijken",
-                reviewsTag: "Getuigenissen",
-                reviewsTitle: "Wat Onze Klanten Zeggen",
-                review1: '"6 maanden geleden overgestapt van kabel. Bespaar meer dan €80/maand met veel meer content. De kwaliteit is ongelooflijk."',
-                review2: '"De setup duurde letterlijk 2 minuten. 4K-kwaliteit is geweldig — beter dan mijn oude satellietabonnement."',
-                review3: '"Alle Eredivisie-wedstrijden zonder dure sportpakketten. Het supportteam is responsief en behulpzaam."',
-                verified: "Geverifieerde Klant",
-                premium: "Premium Lid",
-                sportsFan: "Sportfan",
+                why6Title: "Premium EPG-Gids",
+                why6Desc: "Weet 7 dagen van tevoren wat er speelt",
                 guaranteeTitle: "30-Dagen Geld-Terug-Garantie",
                 guaranteeText: "Probeer Vexacast volledig risicovrij. Als je om welke reden dan ook niet tevreden bent, krijg je je geld terug. Geen vragen gesteld.",
                 finalTitle: "Klaar om te Streamen?",
-                finalSub: "Sluit je aan bij 50.000+ tevreden klanten",
                 ctaWhatsApp: "Stuur ons een Bericht op WhatsApp",
-                footer: "Premium IPTV Service © 2026 • Alle Rechten Voorbehouden"
+                footer: "Premium IPTV Service © 2026 • Alle Rechten Voorbehouden",
+                waHero: "Hallo! Ik wil Vexacast Premium IPTV",
+                waMonthly: "Hallo! Ik wil het Maandelijkse Abonnement",
+                wa3Month: "Hallo! Ik wil het 3-Maanden Abonnement",
+                waAnnual: "Hallo! Ik wil het Jaarlijkse Abonnement",
+                waFinal: "Hallo! Ik ben klaar om Vexacast te krijgen",
+                navHome: "Home",
+                navPricing: "Prijzen",
+                navChannels: "Kanalen",
+                navReviews: "Beoordelingen"
+            },
+            es: {
+                heroTitle1: "Vexacast — Tu TV, mejorada.",
+                heroTitle2: "Un plan sencillo.",
+                heroSub: 'Accede a <strong>49.000+ canales en vivo</strong> y <strong>80.000+ películas</strong> en impresionante 4K. Sin contratos, sin tarifas ocultas. Solo entretenimiento.',
+                channels: "Canales",
+                uptime: "Disponibilidad",
+                quality: "Calidad",
+                ctaMain: "Comenzar a Transmitir",
+                ctaSec: "Ver Planes",
+                trustSecure: "Pago Seguro",
+                trustInstant: "Instalación Instantánea",
+                trustGuarantee: "Garantía 30 Días",
+                pricingTag: "Precios Simples",
+                pricingTitle: "Elige Tu Plan",
+                pricingSub: "Todos los planes incluyen acceso completo. Sin restricciones.",
+                planMonthly: "Mensual",
+                planMonthlyDesc: "Acceso flexible",
+                plan3Months: "3 Meses",
+                plan3MonthsDesc: "Mejor valor para espectadores regulares",
+                planAnnual: "Anual",
+                planAnnualDesc: "Máximo valor para entusiastas",
+                perMonth: "/mes",
+                perQuarter: "/trimestre",
+                perYear: "/año",
+                mostPopular: "Más Popular",
+                feat49k: "49.000+ Canales en Vivo",
+                featHD4K: "Calidad HD y 4K",
+                feat4KUltra: "Calidad 4K Ultra HD Completa",
+                feat1Device: "1 Conexión de Dispositivo",
+                feat7Replay: "Repetición 7 Días",
+                feat14Replay: "Repetición 14 Días",
+                feat30Replay: "Repetición 30 Días",
+                feat80kVOD: "80.000+ Películas y Series",
+                featEPG: "Guía EPG Premium",
+                featAntiFreeze: "Tecnología Anti-Congelación",
+                featPriority: "Soporte Prioritario",
+                featVIP: "Soporte VIP",
+                getMonthly: "Obtener Mensual",
+                get3Months: "Obtener 3 Meses",
+                getAnnual: "Obtener Anual",
+                note7day: "Garantía de devolución de 7 días",
+                note14day: "Garantía de devolución de 14 días",
+                note30day: "Garantía de devolución de 30 días",
+                channelsTitle: "Todos Tus Favoritos",
+                whyTag: "Por Qué Vexacast",
+                whyTitle: "Construido para Transmisión sin Interrupciones",
+                why1Title: "49.000+ Canales en Vivo",
+                why1Desc: "Deportes, películas, noticias, contenido infantil de todo el mundo",
+                why2Title: "80.000+ A Demanda",
+                why2Desc: "Últimas películas y series actualizadas diariamente",
+                why3Title: "Tecnología Anti-Congelación",
+                why4Title: "Calidad 4K Completa",
+                why4Desc: "Calidad cristalina en cualquier tamaño de pantalla",
+                why5Title: "Todos los Dispositivos Compatibles",
+                why5Desc: "Smart TV, FireStick, Android, iOS, PC",
+                why6Title: "Guía EPG Premium",
+                why6Desc: "Saber qué se reproduce con 7 días de anticipación",
+                guaranteeTitle: "Garantía de Devolución de 30 Días",
+                guaranteeText: "Prueba Vexacast completamente sin riesgo. Si no estás satisfecho por cualquier motivo, te reembolsaremos tu pago. Sin preguntas.",
+                finalTitle: "¿Listo para Comenzar a Transmitir?",
+                ctaWhatsApp: "Envíanos un Mensaje en WhatsApp",
+                footer: "Servicio IPTV Premium © 2026 • Todos los Derechos Reservados",
+                waHero: "¡Hola! Quiero Vexacast Premium IPTV",
+                waMonthly: "¡Hola! Quiero el Plan Mensual",
+                wa3Month: "¡Hola! Quiero el Plan de 3 Meses",
+                waAnnual: "¡Hola! Quiero el Plan Anual",
+                waFinal: "¡Hola! Estoy listo para obtener Vexacast",
+                navHome: "Inicio",
+                navPricing: "Precios",
+                navChannels: "Canales",
+                navReviews: "Opiniones"
             }
         };
 
-        // Detect browser language and apply translations
+        // Detect browser language
+
+        // 2026-11-01 clean relaunch: neutral copy (no fixtures, no third-party names, no unverifiable counts)
+        const cleanCopy = {
+            en: { notice: "Premium 4K IPTV from $19/month • Questions? WhatsApp:", uptime: "Movies & series", why3Desc: "Stable streams, built to hold up at peak hours", finalSub: "Set up in minutes on WhatsApp. Money-back guarantee.", catSports: "Live sports", catMovies: "Movies", catSeries: "Series", catNews: "News", catKids: "Kids", catDocs: "Documentaries", catIntl: "International channels" },
+            fr: { notice: "IPTV 4K premium dès 19 $/mois • Une question ? WhatsApp :", uptime: "Films & séries", why3Desc: "Flux stables, conçus pour tenir aux heures de pointe", finalSub: "Activation en quelques minutes sur WhatsApp. Satisfait ou remboursé.", catSports: "Sport en direct", catMovies: "Films", catSeries: "Séries", catNews: "Info", catKids: "Jeunesse", catDocs: "Documentaires", catIntl: "Chaînes internationales" },
+            de: { notice: "Premium 4K IPTV ab 19 $/Monat • Fragen? WhatsApp:", uptime: "Filme & Serien", why3Desc: "Stabile Streams, auch zu Stoßzeiten", finalSub: "In wenigen Minuten per WhatsApp eingerichtet. Geld-zurück-Garantie.", catSports: "Live-Sport", catMovies: "Filme", catSeries: "Serien", catNews: "Nachrichten", catKids: "Kinder", catDocs: "Dokumentationen", catIntl: "Internationale Sender" },
+            nl: { notice: "Premium 4K IPTV vanaf $19/maand • Vragen? WhatsApp:", uptime: "Films & series", why3Desc: "Stabiele streams, ook op drukke momenten", finalSub: "In enkele minuten ingesteld via WhatsApp. Geld-terug-garantie.", catSports: "Live sport", catMovies: "Films", catSeries: "Series", catNews: "Nieuws", catKids: "Kinderen", catDocs: "Documentaires", catIntl: "Internationale zenders" },
+            es: { notice: "IPTV 4K premium desde 19 $/mes • ¿Dudas? WhatsApp:", uptime: "Películas y series", why3Desc: "Señal estable, preparada para las horas punta", finalSub: "Activación en minutos por WhatsApp. Garantía de devolución.", catSports: "Deportes en directo", catMovies: "Películas", catSeries: "Series", catNews: "Noticias", catKids: "Infantil", catDocs: "Documentales", catIntl: "Canales internacionales" }
+        };
+        Object.entries(cleanCopy).forEach(([l, o]) => translations[l] && Object.assign(translations[l], o));
+
         function detectLanguage() {
             const browserLang = navigator.language || navigator.userLanguage;
             const lang = browserLang.substring(0, 2).toLowerCase();
-
-            // Check if we support this language
+            // Check if we support this language, otherwise default to English
             if (translations[lang]) {
                 return lang;
             }
-            return 'en'; // Default to English
+            return 'en'; // Default to English for foreign languages
         }
 
+        // Update WhatsApp links with translated messages
+        function updateWhatsAppLinks(lang) {
+            const t = translations[lang];
+            if (!t) return;
+
+            // Update all WhatsApp CTAs
+            const heroCTA = document.getElementById('heroCTA');
+            if (heroCTA) {
+                heroCTA.href = `https://wa.me/33773436514?text=${encodeURIComponent(t.waHero)}`;
+            }
+
+            const monthlyPlanCTA = document.getElementById('monthlyPlanCTA');
+            if (monthlyPlanCTA) {
+                monthlyPlanCTA.href = `https://wa.me/33773436514?text=${encodeURIComponent(t.waMonthly)}`;
+            }
+
+            const quarterPlanCTA = document.getElementById('quarterPlanCTA');
+            if (quarterPlanCTA) {
+                quarterPlanCTA.href = `https://wa.me/33773436514?text=${encodeURIComponent(t.wa3Month)}`;
+            }
+
+            const annualPlanCTA = document.getElementById('annualPlanCTA');
+            if (annualPlanCTA) {
+                annualPlanCTA.href = `https://wa.me/33773436514?text=${encodeURIComponent(t.waAnnual)}`;
+            }
+
+            const finalCTA = document.getElementById('finalCTA');
+            if (finalCTA) {
+                finalCTA.href = `https://wa.me/33773436514?text=${encodeURIComponent(t.waFinal)}`;
+            }
+        }
+
+        // Apply translations to the page
         function applyTranslations(lang) {
             const t = translations[lang];
             if (!t) return;
@@ -1318,13 +1421,19 @@
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (t[key]) {
-                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                        el.placeholder = t[key];
-                    } else {
-                        el.innerHTML = t[key];
-                    }
+                    el.innerHTML = t[key];
                 }
             });
+
+            // Update nav links
+            document.querySelectorAll('[data-i18n-nav]').forEach(el => {
+                const key = 'nav' + el.getAttribute('data-i18n-nav').charAt(0).toUpperCase() + el.getAttribute('data-i18n-nav').slice(1);
+                if (t[key]) el.textContent = t[key];
+            });
+
+            // Update WhatsApp links
+            updateWhatsAppLinks(lang);
+
 
             // Update active language button
             document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -1335,13 +1444,13 @@
             });
 
             // Store preference
-            localStorage.setItem('vx-lang', lang);
+            localStorage.setItem('vexacast-lang', lang);
         }
 
         // Initialize language
         function initLanguage() {
             // Check for stored preference first
-            const storedLang = localStorage.getItem('vx-lang');
+            const storedLang = localStorage.getItem('vexacast-lang');
             const lang = storedLang || detectLanguage();
             applyTranslations(lang);
         }

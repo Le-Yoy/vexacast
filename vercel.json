@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/welcome/", "permanent": true },
+    { "source": "/index.html", "destination": "/welcome/", "permanent": true },
+    { "source": "/pricing", "destination": "/pricing-plans/", "permanent": true },
+    { "source": "/pricing/:path*", "destination": "/pricing-plans/", "permanent": true }
+  ]
+}
